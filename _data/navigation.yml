@@ -1,7 +1,11 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "태초마을"
+    url: https://do66i.github.io
+  - title: "오늘나의배움"
+    url: https://do66i.github.io/categories/#til
+  - title: "독서감상문"
+    url: https://do66i.github.io/categories/#bookreview
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
