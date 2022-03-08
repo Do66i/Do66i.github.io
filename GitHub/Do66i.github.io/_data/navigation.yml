@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "태초마을"
+    url: https://do66i.github.io
+  - title: "오늘나의배움"
+    url: https://do66i.github.io/categories/#til
+  - title: "독서감상문"
+    url: https://do66i.github.io/categories/#bookreview
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
