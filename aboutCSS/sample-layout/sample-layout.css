@@ -1,0 +1,65 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+body{
+    background: white;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background: whitesmoke;
+    padding: 0.4rem;
+    margin: 0.4rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    margin : 0.2rem;
+}
+
+.row {
+    margin: 0.2rem;
+    border: 1px dashed purple;
+}
+
+.icon {
+    margin : 0.2rem;
+    border: 1px dashed orange;
+}
+
+.w10 {
+    /* flex : 1 0 0; */
+    flex-grow: 1;
+    /* 팽창지수(grow), 수축지수(shrink), 컨텐츠 기본 크기(basis) */
+}
+
+.w20 {
+    /* flex : 2 0 0; */
+    flex-grow: 2;
+}
+
+.w70 {
+    /* flex : 7 0 0; */
+    flex-grow: 7;
+}
+
+.h20 {
+    flex : 2 0 0;
+}
+
+.h40 {
+    flex : 4 0 0;
+}
+
+.h80 {
+    flex : 8 0 0;
+}

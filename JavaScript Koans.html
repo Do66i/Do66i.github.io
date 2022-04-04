@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>JavaScript Koans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./JavaScript Koans_files/mocha.min.css" integrity="sha512-6RWs5FczsXwODIZJoL0szz3bXX5W+q/m7bFVQ7HSwZbBXd7PpyYrg2f9Dr4Y2Guqi5k4NJsemxXuiiFoI8fQ4A==" crossorigin="anonymous">
+</head>
+
+<body cz-shortcut-listen="true">
+  <div id="mocha">
+    <h1>JavaScript Koans에 오신 것을 환영합니다. 통과해야 하는 테스트는 총 50개입니다.</h1>
+  <ul id="mocha-stats"><li class="progress"><canvas width="140" height="140"></canvas></li><li class="passes"><a href="javascript:void(0);">passes:</a> <em>2</em></li><li class="failures"><a href="javascript:void(0);">failures:</a> <em>48</em></li><li class="duration">duration: <em>0.02</em>s</li></ul><ul id="mocha-report"><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">expect에 대해서 학습합니다.</a></h1><ul><li class="test pass fast"><h2>테스트하는 값(expect의 인자)이 true인지의 여부를 검사합니다.<span class="duration">1ms</span> <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EB%8A%94%20%EA%B0%92%5C(expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%5C)%EC%9D%B4%20true%EC%9D%B8%EC%A7%80%EC%9D%98%20%EC%97%AC%EB%B6%80%EB%A5%BC%20%EA%B2%80%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre style="display: none;"><code>/* 
+첫 문제는 가볍게 풀어봅시다.
+expect 함수의 인자를 아래와 같이 false 대신 true로 변경하여 테스트를 통과하세요.
+  expect(true).to.be.true;
+*/
+<span class="comment">// TODO: 테스트가 통과될 수 있도록(테스트하는 값이 true가 되도록) expect의 첫 번째 인자를 수정합니다.</span>
+expect(true).to.be.true;</code></pre></li><li class="test pass fast"><h2>테스트하는 값(expect의 인자)이 falsy 여부를 검사합니다.<span class="duration">0ms</span> <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EB%8A%94%20%EA%B0%92%5C(expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%5C)%EC%9D%B4%20falsy%20%EC%97%AC%EB%B6%80%EB%A5%BC%20%EA%B2%80%EC%82%AC%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre style="display: none;"><code><span class="comment">// 반대의 경우에는 어떻게 해야할까요?</span>
+<span class="comment">// TODO: 테스트가 통과될 수 있도록(테스트하는 값이 false가 되도록) expect의 첫 번째 인자를 수정합니다.</span>
+expect(false).to.be.false;</code></pre></li><li class="test fail"><h2>'테스트하는 값'을 '기대하는 값'과 비교한 결과가 참 인지 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%27%ED%85%8C%EC%8A%A4%ED%8A%B8%ED%95%98%EB%8A%94%20%EA%B0%92%27%EC%9D%84%20%27%EA%B8%B0%EB%8C%80%ED%95%98%EB%8A%94%20%EA%B0%92%27%EA%B3%BC%20%EB%B9%84%EA%B5%90%ED%95%9C%20%EA%B2%B0%EA%B3%BC%EA%B0%80%20%EC%B0%B8%20%EC%9D%B8%EC%A7%80%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected false to be true
+    at n.&lt;anonymous&gt; (koans/01_Introduction.js:63:48)</pre><pre style="display: none;"><code><span class="comment">// <span class="string">'테스트하는 값'</span>은 우리가 작성한 어떤 코드의 실제 실행 결과 값이므로 <span class="string">'실제 값'</span>이라고 불러도 됩니다.</span>
+let actualValue = <span class="number">1</span> + <span class="number">1</span>;
+let expectedValue = FILL_ME_IN; <span class="comment">// TODO: <span class="string">'FILL_ME_IN'</span>을 변경하여 테스트 케이스를 완성합니다.</span>
+expect(actualValue === expectedValue).to.be.true;</code></pre></li><li class="test fail"><h2>Matcher .equal 의 사용법을 학습합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Matcher%20%5C.equal%20%EC%9D%98%20%EC%82%AC%EC%9A%A9%EB%B2%95%EC%9D%84%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 2 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/01_Introduction.js:79:22)</pre><pre style="display: none;"><code>let expectedValue = FILL_ME_IN; <span class="comment">// TODO</span>
+<span class="comment">// .equal은 두 값이 타입까지 엄격하게 같은지 검사(strict equlity, ===)합니다.</span>
+expect(<span class="number">1</span> + <span class="number">1</span>).to.equal(expectedValue);</code></pre></li><li class="test fail"><h2>Matcher .equal의 사용법을 학습합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=expect%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Matcher%20%5C.equal%EC%9D%98%20%EC%82%AC%EC%9A%A9%EB%B2%95%EC%9D%84%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected '2' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/01_Introduction.js:84:28)</pre><pre style="display: none;"><code>let actualValue = (<span class="number">1</span> + <span class="number">1</span>).toString();
+expect(actualValue).to.equal(FILL_ME_IN); <span class="comment">// TODO</span></code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">type에 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>비교연산자 '=='는 두 값의 일치 여부를 느슨하게 검사(loose equality)합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90%20%27%3D%3D%27%EB%8A%94%20%EB%91%90%20%EA%B0%92%EC%9D%98%20%EC%9D%BC%EC%B9%98%20%EC%97%AC%EB%B6%80%EB%A5%BC%20%EB%8A%90%EC%8A%A8%ED%95%98%EA%B2%8C%20%EA%B2%80%EC%82%AC%5C(loose%20equality%5C)%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected false to be true
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:5:47)</pre><pre style="display: none;"><code>let actualValue = <span class="number">1</span> + <span class="number">1</span>;
+let expectedValue = FILL_ME_IN;
+expect(actualValue == expectedValue).to.be.true;
+/*
+혹시 <span class="string">'FILL_ME_IN'</span>을 <span class="string">'<span class="number">2</span>'</span>(문자열 <span class="string">'<span class="number">2</span>'</span>)로 변경해도 테스트가 통과된다는 사실을 알고 계십니까?
+<span class="string">'=='</span>의 실행 중 타입 변환(type coercion)이 일어나기 때문입니다. 
+이는 다소 복잡하고, 명확한 규칙이 존재하지 않습니다. 
+느슨한 동치 연산자 <span class="string">'=='</span>의 느슨함을 보여주는 예시가 아래에 있습니다.
+아래 테스트 코드들의 주석을 제거해도 이 테스트는 통과합니다.
+*/
+<span class="comment">// expect(<span class="number">0</span> == false).to.be.true;</span>
+<span class="comment">// expect(<span class="string">''</span> == false).to.be.true;</span>
+<span class="comment">// expect([] == false).to.be.true;</span>
+<span class="comment">// expect(![] == false).to.be.true;</span>
+<span class="comment">// expect([] == ![]).to.be.true;</span>
+<span class="comment">// expect([] == <span class="string">''</span>).to.be.true;</span>
+<span class="comment">// expect([] == <span class="number">0</span>).to.be.true;</span>
+<span class="comment">// expect([<span class="string">''</span>] == <span class="string">''</span>).to.be.true;</span>
+<span class="comment">// expect([<span class="string">''</span>] == <span class="number">0</span>).to.be.true;</span>
+<span class="comment">// expect([<span class="number">0</span>] == <span class="number">0</span>).to.be.true;</span></code></pre></li><li class="test fail"><h2>비교연산자 '==='는 두 값의 일치 여부를 엄격하게 검사(strict equality)합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EB%B9%84%EA%B5%90%EC%97%B0%EC%82%B0%EC%9E%90%20%27%3D%3D%3D%27%EB%8A%94%20%EB%91%90%20%EA%B0%92%EC%9D%98%20%EC%9D%BC%EC%B9%98%20%EC%97%AC%EB%B6%80%EB%A5%BC%20%EC%97%84%EA%B2%A9%ED%95%98%EA%B2%8C%20%EA%B2%80%EC%82%AC%5C(strict%20equality%5C)%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected false to be true
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:37:48)</pre><pre style="display: none;"><code>let actualValue = <span class="number">1</span> + <span class="number">1</span>;
+let expectedValue = FILL_ME_IN;
+expect(actualValue === expectedValue).to.be.true;
+<span class="comment">// 이제 <span class="string">'FILL_ME_IN'</span>을 대신할 수 있는 건 number 타입의 <span class="number">2</span>뿐입니다.</span>
+<span class="comment">// 문자열 <span class="string">'<span class="number">2</span>'</span>는 테스트를 통과하지 못합니다.</span></code></pre></li><li class="test fail"><h2>expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EB%93%A4%EC%96%B4%EA%B0%84%20%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%98%20%ED%8F%89%EA%B0%80%5C(evaluation%5C)%20%EA%B2%B0%EA%B3%BC%EB%A5%BC%20%EC%98%88%EC%B8%A1%ED%95%B4%20%EB%B4%85%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected '11' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:43:24)</pre><pre style="display: none;"><code>expect(<span class="number">1</span> + <span class="string">'<span class="number">1</span>'</span>).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EB%93%A4%EC%96%B4%EA%B0%84%20%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%98%20%ED%8F%89%EA%B0%80%5C(evaluation%5C)%20%EA%B2%B0%EA%B3%BC%EB%A5%BC%20%EC%98%88%EC%B8%A1%ED%95%B4%20%EB%B4%85%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 122 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:47:26)</pre><pre style="display: none;"><code>expect(<span class="number">123</span> - <span class="string">'<span class="number">1</span>'</span>).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EB%93%A4%EC%96%B4%EA%B0%84%20%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%98%20%ED%8F%89%EA%B0%80%5C(evaluation%5C)%20%EA%B2%B0%EA%B3%BC%EB%A5%BC%20%EC%98%88%EC%B8%A1%ED%95%B4%20%EB%B4%85%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 2 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:51:25)</pre><pre style="display: none;"><code>expect(<span class="number">1</span> + true).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20expect%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EB%93%A4%EC%96%B4%EA%B0%84%20%ED%91%9C%ED%98%84%EC%8B%9D%EC%9D%98%20%ED%8F%89%EA%B0%80%5C(evaluation%5C)%20%EA%B2%B0%EA%B3%BC%EB%A5%BC%20%EC%98%88%EC%B8%A1%ED%95%B4%20%EB%B4%85%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected '1true' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/02_Types-part1.js:55:27)</pre><pre style="display: none;"><code>expect(<span class="string">'<span class="number">1</span>'</span> + true).to.equal(FILL_ME_IN);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%27const%27%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">'const'에 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>'const'로 선언된 변수에는 재할당(reassignment)이 금지됩니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%27const%27%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%27const%27%EB%A1%9C%20%EC%84%A0%EC%96%B8%EB%90%9C%20%EB%B3%80%EC%88%98%EC%97%90%EB%8A%94%20%EC%9E%AC%ED%95%A0%EB%8B%B9%5C(reassignment%5C)%EC%9D%B4%20%EA%B8%88%EC%A7%80%EB%90%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">TypeError: Assignment to constant variable.
+    at n.&lt;anonymous&gt; (koans/03_LetConst.js:5:14)</pre><pre style="display: none;"><code><span class="comment">// 아래 코드에서 문제가 되는 부분을 삭제합니다.</span>
+const constNum = <span class="number">0</span>;
+constNum = <span class="number">0</span>;
+expect(constNum).to.equal(<span class="number">0</span>);
+const constString = <span class="string">'I am a const'</span>;
+constString = "which means I'm a constant variable, delete me.";
+expect(constString).to.equal(<span class="string">'I am a const'</span>);</code></pre></li><li class="test fail"><h2>'const'로 선언된 배열의 경우 새로운 요소를 추가하거나 삭제할 수 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%27const%27%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%27const%27%EB%A1%9C%20%EC%84%A0%EC%96%B8%EB%90%9C%20%EB%B0%B0%EC%97%B4%EC%9D%98%20%EA%B2%BD%EC%9A%B0%20%EC%83%88%EB%A1%9C%EC%9A%B4%20%EC%9A%94%EC%86%8C%EB%A5%BC%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B1%B0%EB%82%98%20%EC%82%AD%EC%A0%9C%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'Fill this value in' to equal 42
+    at n.&lt;anonymous&gt; (koans/03_LetConst.js:17:23)</pre><pre style="display: none;"><code>const arr = [];
+const toBePushed = FILL_ME_IN;
+arr.push(toBePushed);
+expect(arr[<span class="number">0</span>]).to.equal(<span class="number">42</span>);
+<span class="comment">// 여전히 재할당은 금지됩니다.</span>
+<span class="comment">// arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span></code></pre></li><li class="test fail"><h2>'const'로 선언된 객체의 경우, 속성을 추가하거나 삭제할 수 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%27const%27%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%27const%27%EB%A1%9C%20%EC%84%A0%EC%96%B8%EB%90%9C%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EA%B2%BD%EC%9A%B0%2C%20%EC%86%8D%EC%84%B1%EC%9D%84%20%EC%B6%94%EA%B0%80%ED%95%98%EA%B1%B0%EB%82%98%20%EC%82%AD%EC%A0%9C%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 1 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/03_LetConst.js:25:22)</pre><pre style="display: none;"><code>const obj = { x: <span class="number">1</span> };
+expect(obj.x).to.equal(FILL_ME_IN);
+delete obj.x;
+expect(obj.x).to.equal(FILL_ME_IN);
+<span class="comment">// 여전히 재할당은 금지됩니다.</span>
+<span class="comment">// obj = { x: <span class="number">123</span> };</span>
+obj.occupation = FILL_ME_IN;
+expect(obj[<span class="string">'occupation'</span>]).to.equal(<span class="string">'SW Engineer'</span>);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=scope%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">scope 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>함수 선언식(declaration)과 함수 표현식(expression)의 차이를 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=scope%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%ED%95%A8%EC%88%98%20%EC%84%A0%EC%96%B8%EC%8B%9D%5C(declaration%5C)%EA%B3%BC%20%ED%95%A8%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D%5C(expression%5C)%EC%9D%98%20%EC%B0%A8%EC%9D%B4%EB%A5%BC%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'function' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/04_Scope.js:6:36)</pre><pre style="display: none;"><code>let funcExpressed = <span class="string">'to be a <span class="keyword">function</span>'</span>;
+expect(typeof funcDeclared).to.equal(FILL_ME_IN);
+expect(typeof funcExpressed).to.equal(FILL_ME_IN);
+<span class="keyword">function</span> funcDeclared() {
+  <span class="keyword">return</span> <span class="string">'this is a <span class="keyword">function</span> declaration'</span>;
+}
+funcExpressed = <span class="keyword">function</span> () {
+  <span class="keyword">return</span> <span class="string">'this is a <span class="keyword">function</span> expression'</span>;
+};
+<span class="comment">// 자바스크립트 함수 호이스팅(hoisting)에 대해서 검색해 봅니다.</span>
+const funcContainer = { func: funcExpressed };
+expect(funcContainer.func()).to.equal(FILL_ME_IN);
+funcContainer.func = funcDeclared;
+expect(funcContainer.func()).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>lexical scope에 대해서 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=scope%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20lexical%20scope%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'Outer' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/04_Scope.js:47:29)</pre><pre style="display: none;"><code>let message = <span class="string">'Outer'</span>;
+<span class="keyword">function</span> getMessage() {
+  <span class="keyword">return</span> message;
+}
+<span class="keyword">function</span> shadowGlobal() {
+  let message = <span class="string">'Inner'</span>;
+  <span class="keyword">return</span> message;
+}
+<span class="keyword">function</span> shadowGlobal<span class="number">2</span>(message) {
+  <span class="keyword">return</span> message;
+}
+<span class="keyword">function</span> shadowParameter(message) {
+  message = <span class="string">'Do not use parameters like this!'</span>;
+  <span class="keyword">return</span> message;
+}
+expect(getMessage()).to.equal(FILL_ME_IN);
+expect(shadowGlobal()).to.equal(FILL_ME_IN);
+expect(shadowGlobal<span class="number">2</span>(<span class="string">'Parameter'</span>)).to.equal(FILL_ME_IN);
+expect(shadowParameter(<span class="string">'Parameter'</span>)).to.equal(FILL_ME_IN);
+expect(message).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>클로저(closure)에 대해 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=scope%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%ED%81%B4%EB%A1%9C%EC%A0%80%5C(closure%5C)%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 13 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/04_Scope.js:64:32)</pre><pre style="display: none;"><code><span class="keyword">function</span> increaseBy(increaseByAmount) {
+  <span class="keyword">return</span> <span class="keyword">function</span> (numberToIncrease) {
+    <span class="keyword">return</span> numberToIncrease + increaseByAmount;
+  };
+}
+const increaseBy<span class="number">3</span> = increaseBy(<span class="number">3</span>);
+const increaseBy<span class="number">5</span> = increaseBy(<span class="number">5</span>);
+expect(increaseBy<span class="number">3</span>(<span class="number">10</span>)).to.equal(FILL_ME_IN);
+expect(increaseBy<span class="number">5</span>(<span class="number">10</span>)).to.equal(FILL_ME_IN);
+expect(increaseBy(<span class="number">8</span>)(<span class="number">6</span>) + increaseBy(<span class="number">5</span>)(<span class="number">9</span>)).to.equal(FILL_ME_IN);
+/*
+mdn에 따르면 클로저의 정의는 다음과 같습니다. 반드시 기억하시기 바랍니다.
+  https:<span class="comment">//developer.mozilla.org/en-US/docs/Web/JavaScript/Closures</span>
+  A&nbsp;closure&nbsp;is the combination of a <span class="keyword">function</span> and the lexical environment within which that <span class="keyword">function</span> was declared. This environment consists of any local variables that were in-scope at the time the closure was created.
+  클로저는 함수와 함수가 선언된 어휘적 환경의 조합을 말한다.
+  이 환경은 클로저가 생성된 시점의 유효 범위 내에 있는 모든 지역 변수로 구성된다.
+여기서의 키워드는 "함수가 선언"된 "어휘적(lexical) 환경"입니다. 
+특이하게도 자바스크립트는 함수가 호출되는 환경와 별개로, 기존에 선언되어 있던 환경 - 어휘적 환경 - 을 기준으로 변수를 조회하려고 합니다.
+유어클레스 영상에서 언급되는 "외부함수의 변수에 접근할 수 있는 내부함수"를 클로져 함수로 부르는 이유도 그렇습니다.
+클로저는 내부(inner) 함수가 외부(outer) 함수의 지역 변수에 접근할 수 있습니다.
+이를 유념하시고 클로저의 유즈 케이스를 검색해 보시기 바랍니다. 아래 검색 키워드를 활용합니다.
+  <span class="keyword">function</span> factories
+  namespacing private variables/functions
+*/</code></pre></li><li class="test fail"><h2>lexical scope와 closure에 대해 다시 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=scope%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20lexical%20scope%EC%99%80%20closure%EC%97%90%20%EB%8C%80%ED%95%B4%20%EB%8B%A4%EC%8B%9C%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 26 to equal 'Fill this value in'
+    at outerFn (koans/04_Scope.js:106:22)
+    at n.&lt;anonymous&gt; (koans/04_Scope.js:112:21)</pre><pre style="display: none;"><code>let age = <span class="number">27</span>;
+let name = <span class="string">'jin'</span>;
+let height = <span class="number">179</span>;
+<span class="keyword">function</span> outerFn() {
+  let age = <span class="number">24</span>;
+  name = <span class="string">'jimin'</span>;
+  let height = <span class="number">178</span>;
+  <span class="keyword">function</span> innerFn() {
+    age = <span class="number">26</span>;
+    let name = <span class="string">'suga'</span>;
+    <span class="keyword">return</span> height;
+  }
+  innerFn();
+  expect(age).to.equal(FILL_ME_IN);
+  expect(name).to.equal(FILL_ME_IN);
+  <span class="keyword">return</span> innerFn;
+}
+const innerFn = outerFn();
+expect(age).to.equal(FILL_ME_IN);
+expect(name).to.equal(FILL_ME_IN);
+expect(innerFn()).to.equal(FILL_ME_IN);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C">화살표 함수에 관해서</a></h1><ul><li class="test fail"><h2>함수 표현식 사용법을 복습합니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%ED%95%A8%EC%88%98%20%ED%91%9C%ED%98%84%EC%8B%9D%20%EC%82%AC%EC%9A%A9%EB%B2%95%EC%9D%84%20%EB%B3%B5%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected 13 to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/05_ArrowFunction.js:7:26)</pre><pre style="display: none;"><code>const add = <span class="keyword">function</span> (x, y) {
+  <span class="keyword">return</span> x + y
+}
+expect(add(<span class="number">5</span>, <span class="number">8</span>)).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>화살표 함수 사용법을 익힙니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%20%EC%82%AC%EC%9A%A9%EB%B2%95%EC%9D%84%20%EC%9D%B5%ED%9E%99%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected 30 to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/05_ArrowFunction.js:15:28)</pre><pre style="display: none;"><code><span class="comment">// <span class="keyword">function</span> 키워드를 생략하고 화살표 =&gt; 를 붙입니다</span>
+const add = (x, y) =&gt; {
+  <span class="keyword">return</span> x + y
+}
+expect(add(<span class="number">10</span>, <span class="number">20</span>)).to.eql(FILL_ME_IN)
+<span class="comment">// 리턴을 생략할 수 있습니다</span>
+const subtract = (x, y) =&gt; x - y
+expect(subtract(<span class="number">10</span>, <span class="number">20</span>)).to.eql(FILL_ME_IN)
+<span class="comment">// 필요에 따라 소괄호를 붙일 수도 있습니다</span>
+const multiply = (x, y) =&gt; (x * y)
+expect(multiply(<span class="number">10</span>, <span class="number">20</span>)).to.eql(FILL_ME_IN)
+<span class="comment">// 파라미터가 하나일 경우 소괄호 생략이 가능합니다</span>
+const divideBy<span class="number">10</span> = x =&gt; x / <span class="number">10</span>
+expect(divideBy<span class="number">10</span>(<span class="number">100</span>)).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>화살표 함수를 이용해 클로저를 표현합니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%ED%99%94%EC%82%B4%ED%91%9C%20%ED%95%A8%EC%88%98%EB%A5%BC%20%EC%9D%B4%EC%9A%A9%ED%95%B4%20%ED%81%B4%EB%A1%9C%EC%A0%80%EB%A5%BC%20%ED%91%9C%ED%98%84%ED%95%A9%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected 60 to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/05_ArrowFunction.js:37:30)</pre><pre style="display: none;"><code>const adder = x =&gt; {
+  <span class="keyword">return</span> y =&gt; {
+    <span class="keyword">return</span> x + y
+  }
+}
+expect(adder(<span class="number">50</span>)(<span class="number">10</span>)).to.eql(FILL_ME_IN)
+const subtractor = x =&gt; y =&gt; {
+  <span class="keyword">return</span> x - y
+}
+expect(subtractor(<span class="number">50</span>)(<span class="number">10</span>)).to.eql(FILL_ME_IN)
+const htmlMaker = tag =&gt; textContent =&gt; `&lt;${tag}&gt;${textContent}&lt;/${tag}&gt;`
+expect(htmlMaker(<span class="string">'div'</span>)(<span class="string">'code states'</span>)).to.eql(FILL_ME_IN)
+const liMaker = htmlMaker(<span class="string">'li'</span>)
+expect(liMaker(<span class="string">'<span class="number">1</span>st item'</span>)).to.eql(FILL_ME_IN)
+expect(liMaker(<span class="string">'<span class="number">2</span>nd item'</span>)).to.eql(FILL_ME_IN)</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">primitive data type과 reference data type에 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>원시 자료형은 값 자체에 대한 변경이 불가능(immutable)합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%9B%90%EC%8B%9C%20%EC%9E%90%EB%A3%8C%ED%98%95%EC%9D%80%20%EA%B0%92%20%EC%9E%90%EC%B2%B4%EC%97%90%20%EB%8C%80%ED%95%9C%20%EB%B3%80%EA%B2%BD%EC%9D%B4%20%EB%B6%88%EA%B0%80%EB%8A%A5%5C(immutable%5C)%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'codestates' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/06_Types-part2.js:11:21)</pre><pre style="display: none;"><code>let name = <span class="string">'codestates'</span>;
+expect(name).to.equal(FILL_ME_IN);
+expect(name.toUpperCase()).to.equal(FILL_ME_IN);
+expect(name).to.equal(FILL_ME_IN);
+<span class="comment">// 새로운 값으로 재할당은 가능합니다.</span>
+name = name.toUpperCase();
+expect(name).to.equal(FILL_ME_IN);
+/*
+원시 자료형은 값 자체에 대한 변경이 불가능하다고 하는데, 한 변수에 다른 값을 할당하는 것은 변경이 된 것이 아닌가요?
+  let num<span class="number">1</span> = <span class="number">123</span>;
+  num<span class="number">2</span> = <span class="number">123456</span>;
+원시 자료형 그 자체(<span class="string">'hello'</span>, <span class="number">123</span>, <span class="number">456</span>n, true 등)와 원시 자료형이 할당된 변수는 구분되어야 합니다.
+사과 박스에 귤을 담았다고 해서, 귤이 갑자기 사과가 되지는 않는 것과 같이 <span class="number">123</span>이 갑자기 <span class="number">123456</span>이 되지 않습니다.
+*/</code></pre></li><li class="test fail"><h2>원시 자료형을 변수에 할당할 경우, 값 자체의 복사가 일어납니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%9B%90%EC%8B%9C%20%EC%9E%90%EB%A3%8C%ED%98%95%EC%9D%84%20%EB%B3%80%EC%88%98%EC%97%90%20%ED%95%A0%EB%8B%B9%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20%EA%B0%92%20%EC%9E%90%EC%B2%B4%EC%9D%98%20%EB%B3%B5%EC%82%AC%EA%B0%80%20%EC%9D%BC%EC%96%B4%EB%82%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected false to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/06_Types-part2.js:32:27)</pre><pre style="display: none;"><code>let overTwenty = true;
+let allowedToDrink = overTwenty;
+overTwenty = false;
+expect(overTwenty).to.equal(FILL_ME_IN);
+expect(allowedToDrink).to.equal(FILL_ME_IN);
+let variable = <span class="string">'variable'</span>;
+let variableCopy = <span class="string">'variableCopy'</span>;
+variableCopy = variable;
+variable = variableCopy;
+expect(variable).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>원시 자료형 또는 원시 자료형의 데이터를 함수의 인자로 전달할 경우, 값 자체의 복사가 일어납니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%9B%90%EC%8B%9C%20%EC%9E%90%EB%A3%8C%ED%98%95%20%EB%98%90%EB%8A%94%20%EC%9B%90%EC%8B%9C%20%EC%9E%90%EB%A3%8C%ED%98%95%EC%9D%98%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EC%A0%84%EB%8B%AC%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20%EA%B0%92%20%EC%9E%90%EC%B2%B4%EC%9D%98%20%EB%B3%B5%EC%82%AC%EA%B0%80%20%EC%9D%BC%EC%96%B4%EB%82%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 2020 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/06_Types-part2.js:48:28)</pre><pre style="display: none;"><code>let currentYear = <span class="number">2020</span>;
+<span class="keyword">function</span> afterTenYears(year) {
+  year = year + <span class="number">10</span>;
+}
+afterTenYears(currentYear);
+expect(currentYear).to.equal(FILL_ME_IN);
+<span class="keyword">function</span> afterTenYears<span class="number">2</span>(currentYear) {
+  currentYear = currentYear + <span class="number">10</span>;
+  <span class="keyword">return</span> currentYear;
+}
+let after<span class="number">10</span> = afterTenYears<span class="number">2</span>(currentYear);
+expect(currentYear).to.equal(FILL_ME_IN);
+expect(after<span class="number">10</span>).to.equal(FILL_ME_IN);
+<span class="comment">// 사실 함수의 인자도 변수에 자료(data)를 할당하는 것입니다.</span>
+<span class="comment">// 함수를 호출하면서 넘긴 인자가 호출된 함수의 지역변수로 (매 호출 시마다) 새롭게 선언됩니다.</span></code></pre></li><li class="test fail"><h2>참조 자료형의 데이터는 동적(dynamic)으로 변합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95%EC%9D%98%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%8A%94%20%EB%8F%99%EC%A0%81%5C(dynamic%5C)%EC%9C%BC%EB%A1%9C%20%EB%B3%80%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 3 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/06_Types-part2.js:109:27)</pre><pre style="display: none;"><code>const arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+expect(arr.length).to.equal(FILL_ME_IN);
+arr.push(<span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>);
+expect(arr.length).to.equal(FILL_ME_IN);
+arr.pop();
+expect(arr.length).to.equal(FILL_ME_IN);
+const obj = {};
+expect(Object.keys(obj).length).to.equal(FILL_ME_IN);
+obj[<span class="string">'name'</span>] = <span class="string">'codestates'</span>;
+obj.quality = <span class="string">'best'</span>;
+obj.product = [<span class="string">'sw engineering'</span>, <span class="string">'product manager'</span>, <span class="string">'growth marketing'</span>, <span class="string">'data science'</span>];
+expect(Object.keys(obj).length).to.equal(FILL_ME_IN);
+delete obj.name;
+expect(Object.keys(obj).length).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=primitive%20data%20type%EA%B3%BC%20reference%20data%20type%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%B0%B8%EC%A1%B0%20%EC%9E%90%EB%A3%8C%ED%98%95%EC%9D%84%20%EB%B3%80%EC%88%98%EC%97%90%20%ED%95%A0%EB%8B%B9%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98%20%EC%A3%BC%EC%86%8C%EA%B0%80%20%EC%A0%80%EC%9E%A5%EB%90%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ Array(4) ] to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/06_Types-part2.js:138:36)</pre><pre style="display: none;"><code>/*
+참조 자료형의 경우, 값 자체의 복사가 일어나지 않는 이유는 어느 정도 납득할만한 이유가 있습니다.
+배열이 얼마나 많은 데이터를 가지고 있는지가 프로그램의 실행 중 수시로 변경될 수 있기 때문입니다.
+쉽게 생각해서 number 타입 데이터 <span class="number">100</span>만개를 요소로 갖는 배열을 생각해 봅시다. 
+따로 명시하지 않는 이상 <span class="number">100</span>만개의 데이터를 일일히 복사하는 것은 상당히 비효율적입니다.
+따라서 일단은 주소만 복사해서 동일한 데이터를 바라보는 게 만드는 것이 효율적입니다.
+배열과 객체의 데이터를 복사하는 방법은 <span class="number">06</span>_Array.js, <span class="number">07</span>_Object.js에서 다룹니다.
+*/
+const overTwenty = [<span class="string">'hongsik'</span>, <span class="string">'minchul'</span>, <span class="string">'hoyong'</span>];
+let allowedToDrink = overTwenty;
+overTwenty.push(<span class="string">'san'</span>);
+expect(allowedToDrink).to.deep.equal(FILL_ME_IN);
+overTwenty[<span class="number">1</span>] = <span class="string">'chanyoung'</span>;
+expect(allowedToDrink[<span class="number">1</span>]).to.deep.equal(FILL_ME_IN);
+<span class="comment">// .deep.equal은 배열의 요소나 객체의 속성이 서로 같은지 확인하는 matcher입니다.</span>
+<span class="comment">// .equal아닌 .deep.equal을 사용하는 이유는 아래 테스트 코드를 통해 고민하시기 바랍니다.</span>
+const ages = [<span class="number">22</span>, <span class="number">23</span>, <span class="number">27</span>];
+allowedToDrink = ages;
+expect(allowedToDrink === ages).to.equal(FILL_ME_IN);
+expect(allowedToDrink === [<span class="number">22</span>, <span class="number">23</span>, <span class="number">27</span>]).to.equal(FILL_ME_IN);
+const nums<span class="number">1</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+const nums<span class="number">2</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+expect(nums<span class="number">1</span> === nums<span class="number">2</span>).to.equal(FILL_ME_IN);
+const person = {
+  son: {
+    age: <span class="number">9</span>,
+  },
+};
+const boy = person.son;
+boy.age = <span class="number">20</span>;
+expect(person.son.age).to.equal(FILL_ME_IN);
+expect(person.son === boy).to.equal(FILL_ME_IN);
+expect(person.son === { age: <span class="number">9</span> }).to.equal(FILL_ME_IN);
+expect(person.son === { age: <span class="number">20</span> }).to.equal(FILL_ME_IN);
+/*
+아래의 테스트 코드들은 선뜻 받아들이기 힘들 수 있습니다.
+  const nums<span class="number">1</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+  const nums<span class="number">2</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+  expect(nums<span class="number">1</span> === nums<span class="number">2</span>).to.equal(FILL_ME_IN);
+배열 nums<span class="number">1</span>과 배열 num<span class="number">2</span>에는 동일한 데이터 [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 들어있는 게 분명해 보이는데, 이 둘은 같지가 않습니다.
+사실 변수 num<span class="number">1</span>와 num<span class="number">2</span>는 배열이 아닙니다. 
+참조 타입의 변수에는 (데이터에 대한) 주소만이 저장된다는 것을 떠올려 봅시다.
+정확히 말해서 변수 num<span class="number">1</span>은 데이터 [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 저장되어 있는 메모리 공간(heap)을 가리키는 주소를 담고 있습니다.
+따라서 위의 코드는 각각 다음의 의미를 가지고 있습니다.
+  const nums<span class="number">1</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 heap에 저장되고, 이 위치의 주소가 변수 num<span class="number">1</span>에 저장된다.</span>
+  const nums<span class="number">2</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 heap에 저장되고, 이 위치의 주소가 변수 num<span class="number">2</span>에 저장된다.</span>
+이제 heap에는 두 개의 [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 저장되어 있고, 각각에 대한 주소가 변수 num<span class="number">1</span>, num<span class="number">2</span>에 저장되어 있습니다.
+이게 비효율적으로 보일수도 있습니다. 굳이 같은 데이터를 왜 한번 더 저장하는 지 이해하기란 쉽지 않습니다.
+하지만 [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 아니라 상당히 큰 데이터(예. length가 <span class="number">100</span>,<span class="number">000</span>인 배열)를 가지고 다시 생각해 봅시다.
+  const nums<span class="number">1</span> = [<span class="number">10</span>, <span class="number">2</span>, <span class="number">71</span>, ..., <span class="number">987</span>]; <span class="comment">// 길이 <span class="number">100</span>,<span class="number">000</span>개인 배열</span>
+  const nums<span class="number">2</span> = [<span class="number">10</span>, <span class="number">2</span>, <span class="number">71</span>, ..., <span class="number">987</span>]; <span class="comment">// 길이 <span class="number">100</span>,<span class="number">000</span>개인 배열</span>
+이 두 배열이 서로 같아서 두 번 저장할 필요가 없다고 말하려면, 일단 두 배열이 같은지 확인해야 합니다. 
+이런 작업을 Object 자료형을 쓸 때마다 한다고 가정해보면, 이것이 얼마나 비효율적인지를 금방 알 수 있습니다.
+이제 아래와 같이 정리할 수 있습니다. 반드시 기억하시기 바랍니다.
+Object 자료형은 데이터는 heap에 저장되고, 변수에 할당을 할 경우 변수에는 주소가 저장된다.
+  <span class="number">1</span>) [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이라는 데이터가 heap에 저장되지만 변수 할당이 되지 않아 주소는 어디에도 저장되지 않는다.</span>
+  <span class="number">2</span>) const num<span class="number">1</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// // [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이라는 데이터가 heap에 저장되고, 그 주소가 변수 num<span class="number">1</span>에 저장된다.</span>
+  <span class="number">3</span>) const num<span class="number">2</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// // [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이라는 데이터가 heap에 저장되고, 그 주소가 변수 num<span class="number">2</span>에 저장된다.</span>
+<span class="number">1</span>), <span class="number">2</span>), <span class="number">3</span>)에서 말하는 주소는 전부 다른 주소입니다. 
+아래의 객체 간 비교도 동일한 논리로 이해하시면 됩니다.
+  expect(person.son === { age: <span class="number">20</span> }).to.equal(FILL_ME_IN);
+다음 문제를 해결해 보시기 바랍니다.
+  const num<span class="number">1</span> = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]; <span class="comment">// [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]이 heap에 저장되고, 그 주소가 변수 num<span class="number">1</span>에 저장된다.</span>
+  const num<span class="number">2</span> = num<span class="number">1</span>; <span class="comment">// 변수 num<span class="number">1</span>에 저장된 주소가 변수 num<span class="number">2</span>에 저장된다. </span>
+  <span class="comment">// 두 변수 num<span class="number">1</span>, num<span class="number">2</span>는 같은 주소를 저장하고 있습니다. 아래 결과는 어떻게 될까요?</span>
+  expect(num<span class="number">1</span> === num<span class="number">2</span>).to.equal(FILL_ME_IN);
+*/</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">Array에 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>Array의 기본을 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Array%EC%9D%98%20%EA%B8%B0%EB%B3%B8%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected false to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/07_Array.js:4:44)</pre><pre style="display: none;"><code>const emptyArr = [];
+expect(typeof emptyArr === <span class="string">'array'</span>).to.equal(FILL_ME_IN);
+expect(emptyArr.length).to.equal(FILL_ME_IN);
+const multiTypeArr = [
+  <span class="number">0</span>,
+  <span class="number">1</span>,
+  <span class="string">'two'</span>,
+  <span class="keyword">function</span> () {
+    <span class="keyword">return</span> <span class="number">3</span>;
+  },
+  { value<span class="number">1</span>: <span class="number">4</span>, value<span class="number">2</span>: <span class="number">5</span> },
+  [<span class="number">6</span>, <span class="number">7</span>],
+];
+expect(multiTypeArr.length).to.equal(FILL_ME_IN);
+expect(multiTypeArr[<span class="number">0</span>]).to.equal(FILL_ME_IN);
+expect(multiTypeArr[<span class="number">2</span>]).to.equal(FILL_ME_IN);
+expect(multiTypeArr[<span class="number">3</span>]()).to.equal(FILL_ME_IN);
+expect(multiTypeArr[<span class="number">4</span>].value<span class="number">1</span>).to.equal(FILL_ME_IN);
+expect(multiTypeArr[FILL_ME_IN][FILL_ME_IN]).to.equal(<span class="number">5</span>);
+expect(multiTypeArr[FILL_ME_IN][FILL_ME_IN]).to.equal(<span class="number">7</span>);</code></pre></li><li class="test fail"><h2>Array의 요소(element)를 다루는 방법을 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Array%EC%9D%98%20%EC%9A%94%EC%86%8C%5C(element%5C)%EB%A5%BC%20%EB%8B%A4%EB%A3%A8%EB%8A%94%20%EB%B0%A9%EB%B2%95%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 1, 2 ] to deeply equal [ 1, 'Fill this value in' ]
+    at n.&lt;anonymous&gt; (koans/07_Array.js:34:25)</pre><pre style="display: none;"><code>const arr = [];
+expect(arr).to.deep.equal([]);
+arr[<span class="number">0</span>] = <span class="number">1</span>;
+expect(arr).to.deep.equal([<span class="number">1</span>]);
+arr[<span class="number">1</span>] = <span class="number">2</span>;
+expect(arr).to.deep.equal([<span class="number">1</span>, FILL_ME_IN]);
+arr.push(<span class="number">3</span>);
+expect(arr).to.deep.equal(FILL_ME_IN);
+const poppedValue = arr.pop();
+expect(poppedValue).to.equal(FILL_ME_IN);
+expect(arr).to.deep.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Array 메소드 slice를 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Array%20%EB%A9%94%EC%86%8C%EB%93%9C%20slice%EB%A5%BC%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 'butter', 'and', 'jelly' ] to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/07_Array.js:47:34)</pre><pre style="display: none;"><code>const arr = [<span class="string">'peanut'</span>, <span class="string">'butter'</span>, <span class="string">'and'</span>, <span class="string">'jelly'</span>];
+expect(arr.slice(<span class="number">1</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">0</span>, <span class="number">1</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">0</span>, <span class="number">2</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">2</span>, <span class="number">2</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">2</span>, <span class="number">20</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">3</span>, <span class="number">0</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">3</span>, <span class="number">100</span>)).to.deep.equal(FILL_ME_IN);
+expect(arr.slice(<span class="number">5</span>, <span class="number">1</span>)).to.deep.equal(FILL_ME_IN);
+<span class="comment">// arr.slice는 arr의 값을 복사하여 새로운 배열을 리턴합니다.</span>
+<span class="comment">// 아래의 코드는 arr 전체를 복사합니다. 자주 사용되니 기억하시기 바랍니다.</span>
+expect(arr.slice(<span class="number">0</span>)).to.deep.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Array를 함수의 인자로 전달할 경우, reference가 전달됩니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Array%EB%A5%BC%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EC%A0%84%EB%8B%AC%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20reference%EA%B0%80%20%EC%A0%84%EB%8B%AC%EB%90%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'changed in function' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/07_Array.js:69:23)</pre><pre style="display: none;"><code><span class="comment">// call(pass) by value와 call(pass) by reference의 차이에 대해서 학습합니다.</span>
+const arr = [<span class="string">'zero'</span>, <span class="string">'one'</span>, <span class="string">'two'</span>, <span class="string">'three'</span>, <span class="string">'four'</span>, <span class="string">'five'</span>];
+<span class="keyword">function</span> passedByReference(refArr) {
+  refArr[<span class="number">1</span>] = <span class="string">'changed in <span class="keyword">function</span>'</span>;
+}
+passedByReference(arr);
+expect(arr[<span class="number">1</span>]).to.equal(FILL_ME_IN);
+const assignedArr = arr;
+assignedArr[<span class="number">5</span>] = <span class="string">'changed in assignedArr'</span>;
+expect(arr[<span class="number">5</span>]).to.equal(FILL_ME_IN);
+const copiedArr = arr.slice();
+copiedArr[<span class="number">3</span>] = <span class="string">'changed in copiedArr'</span>;
+expect(arr[<span class="number">3</span>]).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Array 메소드 shift와 unshift를 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Array%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Array%20%EB%A9%94%EC%86%8C%EB%93%9C%20shift%EC%99%80%20unshift%EB%A5%BC%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 3, 1, 2 ] to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/07_Array.js:84:25)</pre><pre style="display: none;"><code>const arr = [<span class="number">1</span>, <span class="number">2</span>];
+arr.unshift(<span class="number">3</span>);
+expect(arr).to.deep.equal(FILL_ME_IN);
+const shiftedValue = arr.shift();
+expect(shiftedValue).to.deep.equal(FILL_ME_IN);
+expect(arr).to.deep.equal(FILL_ME_IN);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">Object에 대해서 학습합니다.</a></h1><ul><li class="test fail"><h2>Object의 기본을 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Object%EC%9D%98%20%EA%B8%B0%EB%B3%B8%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected true to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/08_Object.js:8:45)</pre><pre style="display: none;"><code>const emptyObj = {};
+expect(typeof emptyObj === <span class="string">'object'</span>).to.equal(FILL_ME_IN);
+expect(emptyObj.length).to.equal(FILL_ME_IN);
+const megalomaniac = {
+  mastermind: <span class="string">'Joker'</span>,
+  henchwoman: <span class="string">'Harley'</span>,
+  getMembers: <span class="keyword">function</span> () {
+    <span class="keyword">return</span> [this.mastermind, this.henchwoman];
+  },
+  relations: [<span class="string">'Anarky'</span>, <span class="string">'Duela Dent'</span>, <span class="string">'Lucy'</span>],
+  twins: {
+    <span class="string">'Jared Leto'</span>: <span class="string">'Suicide Squad'</span>,
+    <span class="string">'Joaquin Phoenix'</span>: <span class="string">'Joker'</span>,
+    <span class="string">'Heath Ledger'</span>: <span class="string">'The Dark Knight'</span>,
+    <span class="string">'Jack Nicholson'</span>: <span class="string">'Tim Burton Batman'</span>,
+  },
+};
+expect(megalomaniac.length).to.equal(FILL_ME_IN);
+expect(megalomaniac.mastermind).to.equal(FILL_ME_IN);
+expect(megalomaniac.henchwoman).to.equal(FILL_ME_IN);
+expect(megalomaniac.henchWoman).to.equal(FILL_ME_IN);
+expect(megalomaniac.getMembers()).to.deep.equal(FILL_ME_IN);
+expect(megalomaniac.relations[FILL_ME_IN]).to.equal(<span class="string">'Lucy'</span>);
+expect(megalomaniac.twins[<span class="string">'Heath Ledger'</span>]).to.deep.equal(<span class="string">'FILL_ME_IN'</span>);</code></pre></li><li class="test fail"><h2>Object의 속성(property)를 다루는 방법을 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Object%EC%9D%98%20%EC%86%8D%EC%84%B1%5C(property%5C)%EB%A5%BC%20%EB%8B%A4%EB%A3%A8%EB%8A%94%20%EB%B0%A9%EB%B2%95%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected true to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/08_Object.js:38:45)</pre><pre style="display: none;"><code>const megalomaniac = { mastermind: <span class="string">'Agent Smith'</span>, henchman: <span class="string">'Agent Smith'</span> };
+expect(<span class="string">'mastermind'</span> in megalomaniac).to.equal(FILL_ME_IN);
+megalomaniac.mastermind = <span class="string">'Neo'</span>;
+expect(megalomaniac[<span class="string">'mastermind'</span>]).to.equal(FILL_ME_IN);
+expect(<span class="string">'secretary'</span> in megalomaniac).to.equal(FILL_ME_IN);
+megalomaniac.secretary = <span class="string">'Agent Smith'</span>;
+expect(<span class="string">'secretary'</span> in megalomaniac).to.equal(FILL_ME_IN);
+delete megalomaniac.henchman;
+expect(<span class="string">'henchman'</span> in megalomaniac).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>'this'는 method를 호출하는 시점에 결정됩니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%27this%27%EB%8A%94%20method%EB%A5%BC%20%ED%98%B8%EC%B6%9C%ED%95%98%EB%8A%94%20%EC%8B%9C%EC%A0%90%EC%97%90%20%EA%B2%B0%EC%A0%95%EB%90%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 2021 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/08_Object.js:66:28)</pre><pre style="display: none;"><code>const currentYear = <span class="keyword"><span class="keyword">new</span></span> <span class="init">Date</span>().getFullYear();
+const megalomaniac = {
+  mastermind: <span class="string">'James Wood'</span>,
+  henchman: <span class="string">'Adam West'</span>,
+  birthYear: <span class="number">1970</span>,
+  calculateAge: <span class="keyword">function</span> (currentYear) {
+    <span class="keyword">return</span> currentYear - this.birthYear;
+  },
+  changeBirthYear: <span class="keyword">function</span> (newYear) {
+    this.birthYear = newYear;
+  },
+};
+expect(currentYear).to.equal(FILL_ME_IN);
+expect(megalomaniac.calculateAge(currentYear)).to.equal(FILL_ME_IN);
+megalomaniac.birthYear = <span class="number">2000</span>;
+expect(megalomaniac.calculateAge(currentYear)).to.equal(FILL_ME_IN);
+megalomaniac.changeBirthYear(<span class="number">2010</span>);
+expect(megalomaniac.calculateAge(currentYear)).to.equal(FILL_ME_IN);
+
+  /**
+   * !!Advanced [this.mastermind]? this.birthYear? this가 무엇일까요?
+   * 
+   * method는 <span class="string">'어떤 객체의 속성으로 정의된 함수'</span>를 말합니다. 위의 megalomaniac 객체를 예로 든다면,
+   * getMembers는 megalomaniac 객체의 속성으로 정의된 함수인 <span class="string">'메소드'</span>라고 할 수 있습니다. megalomaniac.getMembers()와 같은 형태로 사용(호출)할 수 있죠.
+   * 사실은, 전역 변수에 선언한 함수도 웹페이지에서 window 객체의 속성으로 정의된 함수라고 할 수 있습니다. 
+   * window. 접두사 없이도 참조가 가능하기 때문에(window.foo()라고 사용해도 됩니다.), 생략하고 쓰는 것뿐입니다. 이렇듯, method는 항상 <span class="string">'어떤 객체'</span>의 method입니다.
+   * 따라서 호출될 때마다 어떠한 객체의 method일 텐데, 그 <span class="string">'어떠한 객체'</span>를 묻는 것이 this입니다.
+   * 예시로, obj이라는 객체 안에 foo라는 메서드를 선언하고, this를 반환한다고 했을 때 ( 예: let obj = {foo: <span class="keyword">function</span>() {<span class="keyword">return</span> this}}; )
+   * obj.foo() === obj 이라는 코드에 true라고 반환할 것입니다.
+   * this는 함수의 호출에 따라서 값이 달라지기도 합니다. (apply나 call, bind에 대해서는 하단의 학습자료를 통해 더 공부해 보세요.)
+   * 
+   * 그러나 화살표 함수는 다릅니다. 자신의 this가 없습니다.
+   * 화살표 함수에서의 this는 자신을 감싼 정적 범위(lexical context)입니다. (전역에서는 전역 객체를 가리킵니다.)
+   * 일반 변수 조회 규칙(normal variable lookup rules)을 따르기 때문에, 현재 범위에서 존재하지 않는 this를 찾을 때, 화살표 함수 바로 바깥 범위에서 this를 찾습니다.
+   * 그렇기에 화살표 함수를 사용할 때, 이러한 특이점을 생각하고 사용해야 합니다.
+   * 
+   * 이와 관련하여, this에 대해서 더 깊이 학습하셔도 좋습니다.
+   * 가이드가 될 만한 학습자료를 첨부합니다.
+   * https:<span class="comment">//developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Operators/this</span>
+   */</code></pre></li><li class="test fail"><h2>객체의 method를 정의하는 방법을 확인합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20method%EB%A5%BC%20%EC%A0%95%EC%9D%98%ED%95%98%EB%8A%94%20%EB%B0%A9%EB%B2%95%EC%9D%84%20%ED%99%95%EC%9D%B8%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'PinkyBrain' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/08_Object.js:110:46)</pre><pre style="display: none;"><code>const megalomaniac = {
+  mastermind: <span class="string">'Brain'</span>,
+  henchman: <span class="string">'Pinky'</span>,
+  getFusion: <span class="keyword">function</span> () {
+    <span class="keyword">return</span> this.henchman + this.mastermind;
+  },
+  battleCry(numOfBrains) {
+    <span class="keyword">return</span> `They are ${this.henchman} and the` + ` ${this.mastermind}`.repeat(numOfBrains);
+  },
+};
+expect(megalomaniac.getFusion()).to.deep.equal(FILL_ME_IN);
+expect(megalomaniac.battleCry(<span class="number">3</span>)).to.deep.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Object를 함수의 인자로 전달할 경우, reference가 전달됩니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Object%EC%97%90%20%EB%8C%80%ED%95%B4%EC%84%9C%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Object%EB%A5%BC%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A1%9C%20%EC%A0%84%EB%8B%AC%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20reference%EA%B0%80%20%EC%A0%84%EB%8B%AC%EB%90%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'Adam West' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/08_Object.js:131:31)</pre><pre style="display: none;"><code>const obj = {
+  mastermind: <span class="string">'Joker'</span>,
+  henchwoman: <span class="string">'Harley'</span>,
+  relations: [<span class="string">'Anarky'</span>, <span class="string">'Duela Dent'</span>, <span class="string">'Lucy'</span>],
+  twins: {
+    <span class="string">'Jared Leto'</span>: <span class="string">'Suicide Squad'</span>,
+    <span class="string">'Joaquin Phoenix'</span>: <span class="string">'Joker'</span>,
+    <span class="string">'Heath Ledger'</span>: <span class="string">'The Dark Knight'</span>,
+    <span class="string">'Jack Nicholson'</span>: <span class="string">'Tim Burton Batman'</span>,
+  },
+};
+<span class="keyword">function</span> passedByReference(refObj) {
+  refObj.henchwoman = <span class="string">'Adam West'</span>;
+}
+passedByReference(obj);
+expect(obj.henchwoman).to.equal(FILL_ME_IN);
+const assignedObj = obj;
+assignedObj[<span class="string">'relations'</span>] = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+expect(obj[<span class="string">'relations'</span>]).to.deep.equal(FILL_ME_IN);
+const copiedObj = Object.assign({}, obj);
+copiedObj.mastermind = <span class="string">'James Wood'</span>;
+expect(obj.mastermind).to.equal(FILL_ME_IN);
+obj.henchwoman = <span class="string">'Harley'</span>;
+expect(copiedObj.henchwoman).to.equal(FILL_ME_IN);
+delete obj.twins[<span class="string">'Jared Leto'</span>];
+expect(<span class="string">'Jared Leto'</span> in copiedObj.twins).to.equal(FILL_ME_IN);
+/*
+마지막 테스트 코드의 결과가 예상과는 달랐을 수도 있습니다.
+<span class="string">'Object.assign'</span>을 통한 복사는 reference variable은 주소만 복사하기 때문입니다. 
+이와 관련하여 얕은 복사(shallow copy)와 깊은 복사(deep copy)에 대해서 학습하시기 바랍니다.
+가이드가 될 만한 학습자료를 첨부합니다.
+  https:<span class="comment">//scotch.io/bar-talk/copying-objects-in-javascript</span>
+  https:<span class="comment">//medium.com/watcha/깊은-복사와-얕은-복사에-대한-심도있는-이야기-<span class="number">2</span>f<span class="number">7</span>d<span class="number">797</span>e<span class="number">008</span>a</span>
+*/</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.">Spread syntax에 대해 학습합니다.</a></h1><ul><li class="test fail"><h2>전개 문법(spread syntax)을 학습합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%A0%84%EA%B0%9C%20%EB%AC%B8%EB%B2%95%5C(spread%20syntax%5C)%EC%9D%84%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 0, [ 1, 2, 3 ], 4 ] to deeply equal [ 0, 1, 2, 3, 4 ]
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:6:25)</pre><pre style="display: none;"><code>const spread = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];
+<span class="comment">// TODO: 전개 문법을 사용해 테스트 코드를 완성합니다. spread를 지우지 않고 해결할 수 있습니다.</span>
+const arr = [<span class="number">0</span>, spread, <span class="number">4</span>];
+expect(arr).to.deep.equal([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>]);</code></pre></li><li class="test fail"><h2>빈 배열에 전개 문법을 사용할 경우, 아무것도 전달되지 않습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EB%B9%88%20%EB%B0%B0%EC%97%B4%EC%97%90%20%EC%A0%84%EA%B0%9C%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EA%B2%BD%EC%9A%B0%2C%20%EC%95%84%EB%AC%B4%EA%B2%83%EB%8F%84%20%EC%A0%84%EB%8B%AC%EB%90%98%EC%A7%80%20%EC%95%8A%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 0, [], 1 ] to deeply equal [ 0, 1 ]
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:13:25)</pre><pre style="display: none;"><code>const spread = [];
+<span class="comment">// TODO: 전개 문법을 사용해 테스트 코드를 완성합니다. spread를 지우지 않고 해결할 수 있습니다.</span>
+const arr = [<span class="number">0</span>, spread, <span class="number">1</span>];
+expect(arr).to.deep.equal([<span class="number">0</span>, <span class="number">1</span>]);</code></pre></li><li class="test fail"><h2>여러 개의 배열을 이어붙일 수 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%97%AC%EB%9F%AC%20%EA%B0%9C%EC%9D%98%20%EB%B0%B0%EC%97%B4%EC%9D%84%20%EC%9D%B4%EC%96%B4%EB%B6%99%EC%9D%BC%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ Array(2) ] to deeply equal [ 0, 1, 2, 3, 4, 5 ]
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:20:34)</pre><pre style="display: none;"><code>const arr<span class="number">1</span> = [<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>];
+const arr<span class="number">2</span> = [<span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>];
+const concatenated = [FILL_ME_IN, FILL_ME_IN];
+expect(concatenated).to.deep.equal([<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]);
+<span class="comment">// 아래 코드도 같은 동작을 수행합니다.</span>
+<span class="comment">//  arr<span class="number">1</span>.concat(arr<span class="number">2</span>);</span></code></pre></li><li class="test fail"><h2>여러 개의 객체를 병합할 수 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20%EC%97%AC%EB%9F%AC%20%EA%B0%9C%EC%9D%98%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EB%B3%91%ED%95%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected { FILL_ME_IN: 'Fill this value in' } to deeply equal { Object (cohort, duration, ...) }
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:42:28)</pre><pre style="display: none;"><code>const fullPre = {
+  cohort: <span class="number">7</span>,
+  duration: <span class="number">4</span>,
+  mentor: <span class="string">'hongsik'</span>,
+};
+const me = {
+  time: <span class="string">'<span class="number">0156</span>'</span>,
+  status: <span class="string">'sleepy'</span>,
+  todos: [<span class="string">'coplit'</span>, <span class="string">'koans'</span>],
+};
+const merged = { FILL_ME_IN, FILL_ME_IN };
+<span class="comment">// 변수 <span class="string">'merged'</span>에 할당된 것은 <span class="string">'obj<span class="number">1</span>'</span>과 <span class="string">'obj<span class="number">2</span>'</span>의 value일까요, reference일까요?</span>
+<span class="comment">// 만약 값(value, 데이터)이 복사된 것이라면, shallow copy일까요, deep copy일까요?</span>
+expect(merged).to.deep.equal({
+  cohort: <span class="number">7</span>,
+  duration: <span class="number">4</span>,
+  mentor: <span class="string">'hongsik'</span>,
+  time: <span class="string">'<span class="number">0156</span>'</span>,
+  status: <span class="string">'sleepy'</span>,
+  todos: [<span class="string">'coplit'</span>, <span class="string">'koans'</span>],
+});</code></pre></li><li class="test fail"><h2>Rest Parameter는 함수의 인자를 배열로 다룰 수 있게 합니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Rest%20Parameter%EB%8A%94%20%ED%95%A8%EC%88%98%EC%9D%98%20%EC%9D%B8%EC%9E%90%EB%A5%BC%20%EB%B0%B0%EC%97%B4%EB%A1%9C%20%EB%8B%A4%EB%A3%B0%20%EC%88%98%20%EC%9E%88%EA%B2%8C%20%ED%95%A9%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 'first' to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:57:59)</pre><pre style="display: none;"><code><span class="comment">// 자바스크립트는 (named parameter를 지원하지 않기 때문에) 함수 호출 시 인자의 순서가 중요합니다.</span>
+<span class="keyword">function</span> returnFirstArg(firstArg) {
+  <span class="keyword">return</span> firstArg;
+}
+expect(returnFirstArg(<span class="string">'first'</span>, <span class="string">'second'</span>, <span class="string">'third'</span>)).to.equal(FILL_ME_IN);
+<span class="keyword">function</span> returnSecondArg(firstArg, secondArg) {
+  <span class="keyword">return</span> secondArg;
+}
+expect(returnSecondArg(<span class="string">'only give first arg'</span>)).to.equal(FILL_ME_IN);
+<span class="comment">// rest parameter는 spread syntax를 통해 간단하게 구현됩니다.</span>
+<span class="keyword">function</span> getAllParamsByRestParameter(...args) {
+  <span class="keyword">return</span> args;
+}
+<span class="comment">// arguments를 통해 <span class="string">'비슷하게'</span> 함수의 인자들을 다룰 수 있습니다. (spread syntax 도입 이전)</span>
+<span class="comment">// arguments는 모든 함수의 실행 시 자동으로 생성되는 <span class="string">'객체'</span>입니다.</span>
+<span class="keyword">function</span> getAllParamsByArgumentsObj() {
+  <span class="keyword">return</span> arguments;
+}
+const restParams = getAllParamsByRestParameter(<span class="string">'first'</span>, <span class="string">'second'</span>, <span class="string">'third'</span>);
+const argumentsObj = getAllParamsByArgumentsObj(<span class="string">'first'</span>, <span class="string">'second'</span>, <span class="string">'third'</span>);
+expect(restParams).to.deep.equal(FILL_ME_IN);
+expect(Object.keys(argumentsObj)).to.deep.equal(FILL_ME_IN);
+expect(Object.values(argumentsObj)).to.deep.equal(FILL_ME_IN);
+<span class="comment">// argumetns와 rest parmeter를 통해 배열로 된 인자(args)의 차이를 확인하시기 바랍니다.</span>
+expect(restParams === argumentsObj).to.deep.equal(FILL_ME_IN);
+expect(typeof restParams).to.deep.equal(FILL_ME_IN);
+expect(typeof argumentsObj).to.deep.equal(FILL_ME_IN);
+expect(Array.isArray(restParams)).to.deep.equal(FILL_ME_IN);
+expect(Array.isArray(argumentsObj)).to.deep.equal(FILL_ME_IN);
+const argsArr = Array.from(argumentsObj);
+expect(Array.isArray(argsArr)).to.deep.equal(FILL_ME_IN);
+expect(argsArr).to.deep.equal(FILL_ME_IN);
+expect(argsArr === restParams).to.deep.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Rest Parameter는 인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Rest%20Parameter%EB%8A%94%20%EC%9D%B8%EC%9E%90%EC%9D%98%20%EC%88%98%EA%B0%80%20%EC%A0%95%ED%95%B4%EC%A0%B8%20%EC%9E%88%EC%A7%80%20%EC%95%8A%EC%9D%80%20%EA%B2%BD%EC%9A%B0%EC%97%90%EB%8F%84%20%EC%9C%A0%EC%9A%A9%ED%95%98%EA%B2%8C%20%EC%82%AC%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected 6 to equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:103:29)</pre><pre style="display: none;"><code><span class="keyword">function</span> sum(...nums) {
+  let sum = <span class="number">0</span>;
+  for (let i = <span class="number">0</span>; i &lt; nums.length; i++) {
+    sum = sum + nums[i];
+  }
+  <span class="keyword">return</span> sum;
+}
+expect(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)).to.equal(FILL_ME_IN);
+expect(sum(<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>)).to.equal(FILL_ME_IN);</code></pre></li><li class="test fail"><h2>Rest Parameter는 인자의 일부에만 적용할 수도 있습니다. <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=Spread%20syntax%EC%97%90%20%EB%8C%80%ED%95%B4%20%ED%95%99%EC%8A%B5%ED%95%A9%EB%8B%88%EB%8B%A4%5C.%20Rest%20Parameter%EB%8A%94%20%EC%9D%B8%EC%9E%90%EC%9D%98%20%EC%9D%BC%EB%B6%80%EC%97%90%EB%A7%8C%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%EB%8F%84%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%5C." class="replay">‣</a></h2><pre class="error">AssertionError: expected [ 123, undefined, [] ] to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/09_SpreadSyntax.js:112:39)</pre><pre style="display: none;"><code><span class="comment">// rest parameter는 항상 배열입니다.</span>
+<span class="keyword">function</span> getAllParams(required<span class="number">1</span>, required<span class="number">2</span>, ...args) {
+  <span class="keyword">return</span> [required<span class="number">1</span>, required<span class="number">2</span>, args];
+}
+expect(getAllParams(<span class="number">123</span>)).to.deep.equal(FILL_ME_IN);
+<span class="keyword">function</span> makePizza(dough, name, ...toppings) {
+  const order = `You ordered ${name} pizza with ${dough} dough and ${toppings.length} extra toppings!`;
+  <span class="keyword">return</span> order;
+}
+expect(makePizza(<span class="string">'original'</span>)).to.equal(FILL_ME_IN);
+expect(makePizza(<span class="string">'thin'</span>, <span class="string">'pepperoni'</span>)).to.equal(FILL_ME_IN);
+expect(makePizza(<span class="string">'napoli'</span>, <span class="string">'meat'</span>, <span class="string">'extra cheese'</span>, <span class="string">'onion'</span>, <span class="string">'bacon'</span>)).to.equal(FILL_ME_IN);</code></pre></li></ul></li><li class="suite"><h1><a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C">구조 분해 할당(Destructing Assignment)에 관해서</a></h1><ul><li class="test fail"><h2>배열을 분해합니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%EB%B0%B0%EC%97%B4%EC%9D%84%20%EB%B6%84%ED%95%B4%ED%95%A9%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected 'code' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:6:22)</pre><pre style="display: none;"><code>const array = [<span class="string">'code'</span>, <span class="string">'states'</span>, <span class="string">'im'</span>, <span class="string">'course'</span>]
+const [first, second] = array
+expect(first).to.eql(FILL_ME_IN)
+expect(second).to.eql(FILL_ME_IN)
+const result = []
+<span class="keyword">function</span> foo([first, second]) {
+  result.push(second)
+  result.push(first)
+}
+foo(array)
+expect(result).to.eql([<span class="string">'states'</span>, <span class="string">'code'</span>])</code></pre></li><li class="test fail"><h2>rest/spread 문법을 배열 분해에 적용할 수 있습니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20rest%2Fspread%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EB%B0%B0%EC%97%B4%20%EB%B6%84%ED%95%B4%EC%97%90%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected 'code' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:22:22)</pre><pre style="display: none;"><code>const array = [<span class="string">'code'</span>, <span class="string">'states'</span>, <span class="string">'im'</span>, <span class="string">'course'</span>]
+const [start, ...rest] = array
+expect(start).to.eql(FILL_ME_IN)
+expect(rest).to.eql(FILL_ME_IN)
+<span class="comment">// 다음과 같은 문법은 사용할 수 없습니다. 할당하기 전 왼쪽에는, rest 문법 이후에 쉼표가 올 수 없습니다</span>
+<span class="comment">// const [first, ...middle, last] = array</span></code></pre></li><li class="test fail"><h2>객체의 단축(shorthand) 문법을 익힙니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%EA%B0%9D%EC%B2%B4%EC%9D%98%20%EB%8B%A8%EC%B6%95%5C(shorthand%5C)%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EC%9D%B5%ED%9E%99%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected { Object (name, age, ...) } to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:38:23)</pre><pre style="display: none;"><code>const name = <span class="string">'김코딩'</span>
+const age = <span class="number">28</span>
+const person = {
+  name,
+  age,
+  level: <span class="string">'Junior'</span>,
+}
+expect(person).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>객체를 분해합니다 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20%EA%B0%9D%EC%B2%B4%EB%A5%BC%20%EB%B6%84%ED%95%B4%ED%95%A9%EB%8B%88%EB%8B%A4" class="replay">‣</a></h2><pre class="error">AssertionError: expected '박해커' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:45:21)</pre><pre style="display: none;"><code>const student = { name: <span class="string">'박해커'</span>, major: <span class="string">'물리학과'</span> }
+const { name } = student
+expect(name).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20rest%2Fspread%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%ED%95%B4%EC%97%90%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%20%231" class="replay">‣</a></h2><pre class="error">AssertionError: expected '최초보' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:52:21)</pre><pre style="display: none;"><code>const student = { name: <span class="string">'최초보'</span>, major: <span class="string">'물리학과'</span> }
+const { name, ...args } = student
+expect(name).to.eql(FILL_ME_IN)
+expect(args).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>rest/spread 문법을 객체 분해에 적용할 수 있습니다 #2 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20rest%2Fspread%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%ED%95%B4%EC%97%90%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%20%232" class="replay">‣</a></h2><pre class="error">AssertionError: expected '최초보님은 B+의 성적으로 양자역학을 수강했습니다' to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:63:36)</pre><pre style="display: none;"><code>const student = { name: <span class="string">'최초보'</span>, major: <span class="string">'물리학과'</span>, lesson: <span class="string">'양자역학'</span>, grade: <span class="string">'B+'</span> }
+<span class="keyword">function</span> getSummary({ name, lesson: course, grade }) {
+  <span class="keyword">return</span> `${name}님은 ${grade}의 성적으로 ${course}을 수강했습니다`
+}
+expect(getSummary(student)).to.eql(FILL_ME_IN)</code></pre></li><li class="test fail"><h2>rest/spread 문법을 객체 분해에 적용할 수 있습니다 #3 <a href="http://127.0.0.1:5500/im-sprint-javascript-koans/KoansRunner.html?grep=%EA%B5%AC%EC%A1%B0%20%EB%B6%84%ED%95%B4%20%ED%95%A0%EB%8B%B9%5C(Destructing%20Assignment%5C)%EC%97%90%20%EA%B4%80%ED%95%B4%EC%84%9C%20rest%2Fspread%20%EB%AC%B8%EB%B2%95%EC%9D%84%20%EA%B0%9D%EC%B2%B4%20%EB%B6%84%ED%95%B4%EC%97%90%20%EC%A0%81%EC%9A%A9%ED%95%A0%20%EC%88%98%20%EC%9E%88%EC%8A%B5%EB%8B%88%EB%8B%A4%20%233" class="replay">‣</a></h2><pre class="error">AssertionError: expected { Object (name, company, ...) } to deeply equal 'Fill this value in'
+    at n.&lt;anonymous&gt; (koans/10_Destructuring.js:99:28)</pre><pre style="display: none;"><code>const user = {
+  name: <span class="string">'김코딩'</span>,
+  company: {
+    name: <span class="string">'Code States'</span>,
+    department: <span class="string">'Development'</span>,
+    role: {
+      name: <span class="string">'Software Engineer'</span>
+    }
+  },
+  age: <span class="number">35</span>
+}
+const changedUser = {
+  ...user,
+  name: <span class="string">'박해커'</span>,
+  age: <span class="number">20</span>
+}
+const overwriteChanges = {
+  name: <span class="string">'박해커'</span>,
+  age: <span class="number">20</span>,
+  ...user
+}
+const changedDepartment = {
+  ...user,
+  company: {
+    ...user.company,
+    department: <span class="string">'Marketing'</span>
+  }
+}
+expect(changedUser).to.eql(FILL_ME_IN)
+expect(overwriteChanges).to.eql(FILL_ME_IN)
+expect(changedDepartment).to.eql(FILL_ME_IN)</code></pre></li></ul></li></ul></div>
+  <script src="./JavaScript Koans_files/chai.min.js" integrity="sha512-x3BwhuxT44pOQZanacQyDnrB2r1L1AUfjUaefYArTHR9sHEvvy3NSnnm5Z7GAl5YPc3+GEWFT0S34obDSzUvaQ==" crossorigin="anonymous"></script>
+  <script src="./JavaScript Koans_files/mocha.min.js" integrity="sha512-VXEnkWBDumbVHynEFXcid0Nh4i3zpaaihkfwrLsDJ930/iF1ikSR9eAvodmFrizMkesasyR5DP/TLiRRI8RM7w==" crossorigin="anonymous"></script>
+  <script class="mocha-init">
+    mocha.setup('bdd');
+    mocha.checkLeaks();
+    let expect = chai.expect
+    let FILL_ME_IN = 'Fill this value in';
+  </script>
+  <script src="./JavaScript Koans_files/01_Introduction.js"></script>
+  <script src="./JavaScript Koans_files/02_Types-part1.js"></script>
+  <script src="./JavaScript Koans_files/03_LetConst.js"></script>
+  <script src="./JavaScript Koans_files/04_Scope.js"></script>
+  <script src="./JavaScript Koans_files/05_ArrowFunction.js"></script>
+  <script src="./JavaScript Koans_files/06_Types-part2.js"></script>
+  <script src="./JavaScript Koans_files/07_Array.js"></script>
+  <script src="./JavaScript Koans_files/08_Object.js"></script>
+  <script src="./JavaScript Koans_files/09_SpreadSyntax.js"></script>
+  <script src="./JavaScript Koans_files/10_Destructuring.js"></script>
+  <script class="mocha-exec">
+    mocha.run();
+  </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

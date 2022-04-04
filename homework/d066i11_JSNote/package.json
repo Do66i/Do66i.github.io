@@ -1,0 +1,33 @@
+{
+  "name": "im-sprint-javascript-koans",
+  "version": "0.1.0",
+  "description": "Codestates JavaScript Koans",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "mocha test/index.test.js",
+    "report": "mocha test/index.test.js --timeout 50000 --exit --sort --reporter @mochajs/json-file-reporter",
+    "submit": "codestates-submission"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codestates/im-sprint-javascript-koans"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codestates/im-sprint-javascript-koans/issues"
+  },
+  "homepage": "https://github.com/codestates/im-sprint-javascript-koans-#readme",
+  "dependencies": {
+    "@codestates-cc/submission-npm": "^1.1.1",
+    "range": "0.0.3"
+  },
+  "devDependencies": {
+    "@mochajs/json-file-reporter": "^1.3.0",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}

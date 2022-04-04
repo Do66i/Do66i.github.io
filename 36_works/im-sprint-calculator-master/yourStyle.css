@@ -1,0 +1,141 @@
+/* TODO : CSS파일을 편집하여 원하는 스타일의 계산기를 만들어보세요 :) */
+
+/* global */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+  color: #000;
+}
+
+body {
+  background-image: url('./data/codestates-motif.png');
+}
+
+/*
+  Calculator styles
+*/
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #7b62b0;
+  width: 350px;
+  height: 500px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px 10px gray;
+  padding: 30px 20px;
+}
+
+.calculator__display--bare {
+  display: none;
+  background-color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__display--bare > span {
+  display: inline-block;
+  text-align: center;
+  background-color: #f3f0fc;
+  margin: 1px;
+  width: 47px;
+  height: 55px;
+  border-radius: 10px;
+  font-size: 30px;
+  padding: 10px 5px;
+}
+
+.calculator__display--for-advanced {
+  background-color: #ffffff;
+  height: 100px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 25px 15px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+}
+
+.calculator__buttons {
+  background-color: #ffffff;
+  width: 100%;
+  height: 330px;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.clear__and__enter {
+  height: 60px;
+  margin: 10px;
+  background-color: #f3f0fc00;
+}
+
+.clear__and__enter > button {
+  border-radius: 10px;
+  width: 105px;
+  height: 60px;
+  font-size: 1.5em;
+  background-color: #5c64a7a0;
+  margin: 0px 13px 0px 13px;
+  cursor: pointer;
+  outline: none;
+  color: #fffbe9;
+  border-bottom: 3px solid #09090966;
+}
+
+
+.button__row {
+  height: 50px;
+  margin: 10px;
+  background-color: #ffffff;
+}
+
+.button__row > button {
+  width: 60px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 0px 2px;
+  cursor: pointer;
+  outline: none;
+  font-size: 25px;
+  border-bottom: 3px solid #09090925;
+  background-color: #ebebeb;
+}
+
+.button__row > .operator {
+  color: #ffffff;
+  background-color: #313132;
+}
+
+.button__row > .double {
+  width: 129px;
+}
+
+.button__row > .isPressed {
+  background-color: #00da75;
+}
+
+.logo {
+  position: fixed;
+  padding: 30px;
+  bottom: 0px;
+  right: 0px;
+}

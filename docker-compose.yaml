@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  nginx:
+    image: sebcontents/client
+    restart: "always"
+    ports:
+      - "8080:80"
+    container_name: client
+
+  node:
+    image: sebcontents/server
+    restart: "always"
+    ports:
+      - "4999:80"
+    container_name: server
+    volumes:
+      - "./volumefolder:/data"
+
+  mysql:
+    image: amd64/mysql
+    restart: "always"
+    container_name: database
+    environment:
+      MYSQL_ROOT_PASSWORD: supersecret # root 계정 비밀번호
+      MYSQL_DATABASE: test # 초기 생성 데이터베이스
+      MYSQL_USER: kimcoding # 생성할 사용자 이름
+      MYSQL_PASSWORD: supersecret # 생성할 사용자 비밀번호

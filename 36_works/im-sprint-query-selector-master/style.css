@@ -1,0 +1,105 @@
+body {
+  display: flex;
+}
+
+ul, li {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+/* test css */
+
+#mocha {
+  display: flex;
+  flex-direction: column;
+}
+
+#mocha-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 20px;
+  list-style-type: none;
+}
+
+#mocha-stats > li {
+  margin: 10px;
+  padding: 10px;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.progress {
+  display: none;
+}
+
+#mocha-report {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.suite {
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 2px solid #333;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.suite > h1 > a{
+  color: black;
+}
+
+.test {
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 5px;
+  list-style-type: none;
+}
+
+.pass {
+  background-color: #4AC714;
+}
+
+.fail {
+  background-color: #EE3C1C;
+}
+
+/* student code */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.box > div, 
+.box > span,
+.box >  ul,
+.box >  li {
+  border: 2px solid #333;
+  text-align: center;
+  margin: 10px;
+  list-style-type: none;
+}

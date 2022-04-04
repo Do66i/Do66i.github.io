@@ -1,0 +1,718 @@
+{
+  "stats": {
+    "suites": 11,
+    "tests": 50,
+    "passes": 50,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-25T12:09:29.027Z",
+    "end": "2021-10-25T12:09:29.041Z",
+    "duration": 14
+  },
+  "tests": [
+    {
+      "title": "테스트하는 값(expect의 인자)이 true인지의 여부를 검사합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. 테스트하는 값(expect의 인자)이 true인지의 여부를 검사합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "테스트하는 값(expect의 인자)이 falsy 여부를 검사합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. 테스트하는 값(expect의 인자)이 falsy 여부를 검사합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'테스트하는 값'을 '기대하는 값'과 비교한 결과가 참 인지 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. '테스트하는 값'을 '기대하는 값'과 비교한 결과가 참 인지 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Matcher .equal 의 사용법을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. Matcher .equal 의 사용법을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Matcher .equal의 사용법을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. Matcher .equal의 사용법을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "비교연산자 '=='는 두 값의 일치 여부를 느슨하게 검사(loose equality)합니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. 비교연산자 '=='는 두 값의 일치 여부를 느슨하게 검사(loose equality)합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "비교연산자 '==='는 두 값의 일치 여부를 엄격하게 검사(strict equality)합니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. 비교연산자 '==='는 두 값의 일치 여부를 엄격하게 검사(strict equality)합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 변수에는 재할당(reassignment)이 금지됩니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 변수에는 재할당(reassignment)이 금지됩니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 배열의 경우 새로운 요소를 추가하거나 삭제할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 배열의 경우 새로운 요소를 추가하거나 삭제할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 객체의 경우, 속성을 추가하거나 삭제할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 객체의 경우, 속성을 추가하거나 삭제할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수 선언식(declaration)과 함수 표현식(expression)의 차이를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. 함수 선언식(declaration)과 함수 표현식(expression)의 차이를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "lexical scope에 대해서 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. lexical scope에 대해서 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "클로저(closure)에 대해 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. 클로저(closure)에 대해 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "lexical scope와 closure에 대해 다시 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. lexical scope와 closure에 대해 다시 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수 표현식 사용법을 복습합니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 함수 표현식 사용법을 복습합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "화살표 함수 사용법을 익힙니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 화살표 함수 사용법을 익힙니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "화살표 함수를 이용해 클로저를 표현합니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 화살표 함수를 이용해 클로저를 표현합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형은 값 자체에 대한 변경이 불가능(immutable)합니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형은 값 자체에 대한 변경이 불가능(immutable)합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형을 변수에 할당할 경우, 값 자체의 복사가 일어납니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형을 변수에 할당할 경우, 값 자체의 복사가 일어납니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형 또는 원시 자료형의 데이터를 함수의 인자로 전달할 경우, 값 자체의 복사가 일어납니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형 또는 원시 자료형의 데이터를 함수의 인자로 전달할 경우, 값 자체의 복사가 일어납니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "참조 자료형의 데이터는 동적(dynamic)으로 변합니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 참조 자료형의 데이터는 동적(dynamic)으로 변합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array의 기본을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array의 기본을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array의 요소(element)를 다루는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array의 요소(element)를 다루는 방법을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array 메소드 slice를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array 메소드 slice를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array 메소드 shift와 unshift를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array 메소드 shift와 unshift를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object의 기본을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object의 기본을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object의 속성(property)를 다루는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object의 속성(property)를 다루는 방법을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'this'는 method를 호출하는 시점에 결정됩니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. 'this'는 method를 호출하는 시점에 결정됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체의 method를 정의하는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. 객체의 method를 정의하는 방법을 확인합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "전개 문법(spread syntax)을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 전개 문법(spread syntax)을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "빈 배열에 전개 문법을 사용할 경우, 아무것도 전달되지 않습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 빈 배열에 전개 문법을 사용할 경우, 아무것도 전달되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "여러 개의 배열을 이어붙일 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 여러 개의 배열을 이어붙일 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "여러 개의 객체를 병합할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 여러 개의 객체를 병합할 수 있습니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 함수의 인자를 배열로 다룰 수 있게 합니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 함수의 인자를 배열로 다룰 수 있게 합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 인자의 일부에만 적용할 수도 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 인자의 일부에만 적용할 수도 있습니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "배열을 분해합니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 배열을 분해합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 배열 분해에 적용할 수 있습니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 배열 분해에 적용할 수 있습니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체의 단축(shorthand) 문법을 익힙니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 객체의 단축(shorthand) 문법을 익힙니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체를 분해합니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 객체를 분해합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #2",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #2",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #3",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #3",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "테스트하는 값(expect의 인자)이 true인지의 여부를 검사합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. 테스트하는 값(expect의 인자)이 true인지의 여부를 검사합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "테스트하는 값(expect의 인자)이 falsy 여부를 검사합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. 테스트하는 값(expect의 인자)이 falsy 여부를 검사합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'테스트하는 값'을 '기대하는 값'과 비교한 결과가 참 인지 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. '테스트하는 값'을 '기대하는 값'과 비교한 결과가 참 인지 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Matcher .equal 의 사용법을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. Matcher .equal 의 사용법을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Matcher .equal의 사용법을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements expect에 대해서 학습합니다. Matcher .equal의 사용법을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "비교연산자 '=='는 두 값의 일치 여부를 느슨하게 검사(loose equality)합니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. 비교연산자 '=='는 두 값의 일치 여부를 느슨하게 검사(loose equality)합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "비교연산자 '==='는 두 값의 일치 여부를 엄격하게 검사(strict equality)합니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. 비교연산자 '==='는 두 값의 일치 여부를 엄격하게 검사(strict equality)합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "fullTitle": "Bare Minimum Requirements type에 대해서 학습합니다. expect의 인자로 들어간 표현식의 평가(evaluation) 결과를 예측해 봅니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 변수에는 재할당(reassignment)이 금지됩니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 변수에는 재할당(reassignment)이 금지됩니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 배열의 경우 새로운 요소를 추가하거나 삭제할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 배열의 경우 새로운 요소를 추가하거나 삭제할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'const'로 선언된 객체의 경우, 속성을 추가하거나 삭제할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements 'const'에 대해서 학습합니다. 'const'로 선언된 객체의 경우, 속성을 추가하거나 삭제할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수 선언식(declaration)과 함수 표현식(expression)의 차이를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. 함수 선언식(declaration)과 함수 표현식(expression)의 차이를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "lexical scope에 대해서 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. lexical scope에 대해서 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "클로저(closure)에 대해 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. 클로저(closure)에 대해 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "lexical scope와 closure에 대해 다시 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements scope 대해서 학습합니다. lexical scope와 closure에 대해 다시 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "함수 표현식 사용법을 복습합니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 함수 표현식 사용법을 복습합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "화살표 함수 사용법을 익힙니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 화살표 함수 사용법을 익힙니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "화살표 함수를 이용해 클로저를 표현합니다",
+      "fullTitle": "Bare Minimum Requirements 화살표 함수에 관해서 화살표 함수를 이용해 클로저를 표현합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형은 값 자체에 대한 변경이 불가능(immutable)합니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형은 값 자체에 대한 변경이 불가능(immutable)합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형을 변수에 할당할 경우, 값 자체의 복사가 일어납니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형을 변수에 할당할 경우, 값 자체의 복사가 일어납니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "원시 자료형 또는 원시 자료형의 데이터를 함수의 인자로 전달할 경우, 값 자체의 복사가 일어납니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 원시 자료형 또는 원시 자료형의 데이터를 함수의 인자로 전달할 경우, 값 자체의 복사가 일어납니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "참조 자료형의 데이터는 동적(dynamic)으로 변합니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 참조 자료형의 데이터는 동적(dynamic)으로 변합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다.",
+      "fullTitle": "Bare Minimum Requirements primitive data type과 reference data type에 대해서 학습합니다. 참조 자료형을 변수에 할당할 경우, 데이터의 주소가 저장됩니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array의 기본을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array의 기본을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array의 요소(element)를 다루는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array의 요소(element)를 다루는 방법을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array 메소드 slice를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array 메소드 slice를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Array 메소드 shift와 unshift를 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Array에 대해서 학습합니다. Array 메소드 shift와 unshift를 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object의 기본을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object의 기본을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object의 속성(property)를 다루는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object의 속성(property)를 다루는 방법을 확인합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "'this'는 method를 호출하는 시점에 결정됩니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. 'this'는 method를 호출하는 시점에 결정됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체의 method를 정의하는 방법을 확인합니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. 객체의 method를 정의하는 방법을 확인합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Object를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "fullTitle": "Bare Minimum Requirements Object에 대해서 학습합니다. Object를 함수의 인자로 전달할 경우, reference가 전달됩니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "전개 문법(spread syntax)을 학습합니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 전개 문법(spread syntax)을 학습합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "빈 배열에 전개 문법을 사용할 경우, 아무것도 전달되지 않습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 빈 배열에 전개 문법을 사용할 경우, 아무것도 전달되지 않습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "여러 개의 배열을 이어붙일 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 여러 개의 배열을 이어붙일 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "여러 개의 객체를 병합할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. 여러 개의 객체를 병합할 수 있습니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 함수의 인자를 배열로 다룰 수 있게 합니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 함수의 인자를 배열로 다룰 수 있게 합니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 인자의 수가 정해져 있지 않은 경우에도 유용하게 사용할 수 있습니다.",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "Rest Parameter는 인자의 일부에만 적용할 수도 있습니다.",
+      "fullTitle": "Bare Minimum Requirements Spread syntax에 대해 학습합니다. Rest Parameter는 인자의 일부에만 적용할 수도 있습니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "배열을 분해합니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 배열을 분해합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 배열 분해에 적용할 수 있습니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 배열 분해에 적용할 수 있습니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체의 단축(shorthand) 문법을 익힙니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 객체의 단축(shorthand) 문법을 익힙니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "객체를 분해합니다",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 객체를 분해합니다",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #1",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #2",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #2",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "rest/spread 문법을 객체 분해에 적용할 수 있습니다 #3",
+      "fullTitle": "Bare Minimum Requirements 구조 분해 할당(Destructing Assignment)에 관해서 rest/spread 문법을 객체 분해에 적용할 수 있습니다 #3",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

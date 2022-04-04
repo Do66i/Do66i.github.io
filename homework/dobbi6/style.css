@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(128, 120, 136);
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+  background-color: rgb(196, 155, 185);
+  font-size: 40px;
+}
+
+.header__icon {
+  position: absolute;
+  left: 60px;
+}
+.header__title {
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(196, 155, 185);
+  color: rgb(97, 116, 104);
+}
+
+.main__icon {
+  width: 220px;
+  height: 220px;
+  border: solid 5px;
+  border-color: rgb(153, 104, 168);
+  border-radius: 10px;
+}
+
+.main__texts {
+  margin-left: 30px;
+}
+
+.main__texts-1 {
+  line-height: 15px;
+  font-size: 70px;
+}
+
+.main__texts-3 {
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(196, 155, 185);
+  padding: 50px;
+}
+
+.btn_1 {
+  border: solid 4px;
+  border-bottom-width: 10px;
+  border-radius: 20px;
+  padding: 20px 60px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.btn_2 {
+  border: solid 3px;
+  border-bottom-width: 10px;
+  border-radius: 50%;
+  border-color: black;
+  padding: 20px 25px;
+  font-size: 50px;
+  color: tomato;
+}
+
+.btn_3 {
+  border: solid 3px;
+  border-bottom-width: 10px;
+  border-radius: 50%;
+  padding: 20px 30px;
+  font-size: 50px;
+}
+
+.colors {
+  background-color: rgb(196, 155, 185);
+  padding: 10px 10px 55px 10px;
+}
+
+.colors__list {
+  list-style-type: none;
+}
+
+.playlist {
+  color: rgb(52, 61, 70);
+}
+
+.lists__japanese {
+  font-family: "Kaisei HarunoUmi", serif;
+  color: rgba(23, 82, 49, 0.562);
+}
+
+.colors--red {
+  width: 150px;
+  height: 150px;
+  border: solid 8px;
+  border-color: rgb(107, 68, 199);
+  border-radius: 10px;
+}
+
+.red_box {
+  display: flex;
+  margin: 10px 0px 10px -30px;
+}
+
+.color--red_texts {
+  margin: 10px 30px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.colors--pink {
+  width: 150px;
+  height: 150px;
+  border: solid 8px;
+  border-color: rgb(107, 68, 199);
+  border-radius: 10px;
+}
+
+.pink_box {
+  display: flex;
+  margin: 10px 0px 10px -30px;
+}
+
+.colors--pink_texts {
+  margin: 10px 30px;
+}
+
+.colors--blue {
+  width: 150px;
+  height: 150px;
+  border: solid 8px;
+  border-color: rgb(107, 68, 199);
+  border-radius: 10px;
+}
+
+.blue_box {
+  display: flex;
+  margin: 10px 0px 10px -30px;
+}
+
+.colors--blue_texts {
+  margin: 10px 30px;
+}
+
+.colors--green {
+  width: 150px;
+  height: 150px;
+  border: solid 8px;
+  border-color: rgb(107, 68, 199);
+  border-radius: 10px;
+}
+
+.green_box {
+  display: flex;
+  margin: 10px 0px 10px -30px;
+}
+
+.colors--green_texts {
+  margin: 10px 30px;
+}
